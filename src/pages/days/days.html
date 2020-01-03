@@ -1,0 +1,29 @@
+<!--
+  Generated template for the DaysPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button (click)="OnClick()">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Days
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+  <ion-item>
+    <ion-label>Days</ion-label>
+    <ion-select>
+      <ion-option *ngFor="let data of Days" [value]="data.title">{{data.description}}</ion-option>
+    </ion-select>
+  </ion-item> 
+</ion-list>
+</ion-content>

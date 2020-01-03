@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button (click)="OnClick()">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      WELCOME
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list radio-group [(ngModel)]="Calender">
+    <ion-item>
+      <ion-label>DAY</ion-label>
+      <ion-radio value="day"></ion-radio>
+      <!-- <ion-radio value="date"></ion-radio> -->
+    </ion-item>
+    <ion-item>
+      <ion-label>MONTH</ion-label>
+      <ion-radio value="month"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-item *ngIf="Calender == 'month'">
+    <ion-label>Month</ion-label>
+    <ion-select>
+      <ion-option *ngFor="let month of Months" [value]="month.title">{{month.description}}</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item *ngIf="Calender == 'day'">
+    <ion-label>Day</ion-label>
+    <ion-select>
+      <ion-option *ngFor="let data of Days" [value]="data.title">{{data.description}}</ion-option>
+    </ion-select>
+  </ion-item>
+
+
+  <button ion-button icon (click)="GoTo()">
+    GOTO Page
+  </button>
+
+</ion-content>

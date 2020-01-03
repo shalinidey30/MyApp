@@ -1,0 +1,33 @@
+<ion-menu [content]="nav">
+    <ion-buttons>
+        <button ion-button >
+            <ion-icon name="menu" ></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-header>
+        <ion-navbar>
+            <ion-title>
+                MENU
+            </ion-title>
+        </ion-navbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <button ion-item (click)="OnHome()">
+                <ion-icon name="home" item-left></ion-icon>
+                Home
+            </button>
+            <button ion-item (click)="OnMonth()">
+                <ion-icon name="star" item-left></ion-icon>
+                Months
+            </button>
+            <button ion-item (click)="OnDays()">
+                <ion-icon name="star" item-left></ion-icon>
+                Days
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+
+<ion-nav [root]="rootPage" #nav></ion-nav>
