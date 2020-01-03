@@ -11,7 +11,7 @@ import { DaysPage } from '../pages/days/days';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage: any = MonthsPage;
+  rootPage: any = HomePage;
   public IsLoggedIn: boolean = false;
 
   @ViewChild('nav') nav: NavController;
