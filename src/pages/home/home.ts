@@ -27,7 +27,7 @@ export class HomePage {
   ];
 
   public Days: any = [
-    { title: '165', description: 'Sunday' },
+    { title: '1', description: 'Sunday' },
     { title: '2', description: 'Monday' },
     { title: '3', description: 'Tuesday' },
     { title: '4', description: 'Wednesday' },
