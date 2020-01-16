@@ -12,7 +12,7 @@ export class HomePage {
   public IsLoggedIn: boolean = false;
   
   public Months: any = [
-    { title: '1', description: 'January' },
+    { title: '176', description: 'January' },
     { title: '2', description: 'February' },
     { title: '3', description: 'March' },
     { title: '4', description: 'April' },
